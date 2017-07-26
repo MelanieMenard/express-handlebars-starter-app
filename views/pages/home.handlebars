@@ -1,0 +1,21 @@
+<div class="container app-intro">
+  <h1 class="text-center">Kings of England</h1>
+</div>
+
+<div class="container app-main">
+
+  {{#if kings.length}}
+
+    <p>The Kings of England are:</p>
+    <ul class="king-list">
+      {{#each kings}}
+        {{> king-item this}}  
+      {{/each}}
+    </ul>
+
+  {{else}}
+    <p>No King to display!</p>
+  {{/if}}
+
+</div>
+
