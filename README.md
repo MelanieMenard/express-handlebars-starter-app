@@ -2,6 +2,8 @@
 
 Node, Express, Handlebars starter app adapted from [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs).
 
+Live Demo on Heroku: [https://melanie-node-js.herokuapp.com/](https://melanie-node-js.herokuapp.com/)
+
 ## Running Locally
 
 Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
