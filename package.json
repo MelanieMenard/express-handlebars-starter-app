@@ -7,11 +7,12 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js",
+    "watch": "nodemon"
   },
   "dependencies": {
     "express": "4.15.2",
-    "express-handlebars": "3.0.0",
+    "express-handlebars": "^3.0.0",
     "request": "2.81.0"
   },
   "repository": {

@@ -1,19 +1,25 @@
 // require Express application framework
-var express = require('express');
+const express = require('express');
 // require Handlebars templating engine for Express
-var exphbs  = require('express-handlebars');
-// require 'request' module that allows to make external HTTP requests
-var request = require('request');
 
-var app = express();
+// require 'request' module that allows to make external HTTP requests
+const request = require('request');
+const hbs = require('express-handlebars')
+
+const app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
 
 // use Handlebars as templating engine instead of Express default one
-app.engine('handlebars', exphbs({defaultLayout: 'base'}));
-app.set('view engine', 'handlebars');
+app.engine('hbs', hbs({
+  extname: 'hbs',
+  layoutsDir: __dirname + '/views/layouts',
+  partialsDir: __dirname + '/views/partials',
+  defaultLayout: 'main'
+}))
+app.set('view engine', 'hbs');
 
 // define the app routes
 app.get('/', function(req, res) {
