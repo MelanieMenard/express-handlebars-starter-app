@@ -2,18 +2,8 @@
 const express = require('express');
 // const request = require('request');
 const hbs = require('express-handlebars');
-const livereload = require("livereload");
-const connectLiveReload = require("connect-livereload");
-
-const liveReloadServer = livereload.createServer();
-liveReloadServer.server.once('connection', () => {
-	setTimeout(() => {
-		liveReloadServer.refresh("/");
-	}, 100);
-});
 
 const app = express();
-app.use(connectLiveReload())
 app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
