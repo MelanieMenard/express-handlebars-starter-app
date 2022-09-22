@@ -1,0 +1,54 @@
+<div class="modal fade" id="modal_comissao" tabindex="-1" role="dialog"
+                    aria-labelledby="modal_comissao_title" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modal_comissao_title">Histórico</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="table-responsive">
+                                        <table class="table table-success table-bordered">
+                                            <h5 class="text-black">Valor atual da comissão</h5>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Data</th>
+                                                    <th scope="col">Diaria</th>
+                                                    <th scope="col">Bonus +10</th>
+                                                    <th scope="col">Comissão Clientes</th>
+                                                    <th scope="col">Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="comissao_result">
+                                            </tbody>
+                                        </table>
+                                        <table class="table table-secondary">
+                                            <h5 class="text-black">Histórico</h5>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Data</th>
+                                                    <th scope="col">Diaria</th>
+                                                    <th scope="col">Bonus +10</th>
+                                                    <th scope="col">Comissão Clientes</th>
+                                                    <th scope="col">Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="comissao_result_history">
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Limpar todo o
+                                    Histórico</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                <button type="button" onclick="screenShotClients()" class="btn btn-primary">Salvar
+                                    Imagem</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>

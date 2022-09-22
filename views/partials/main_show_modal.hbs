@@ -1,0 +1,43 @@
+<div id="showModal"
+                    class="table-responsive rounded mb-2 mt-2 container p-2 g-3 bg-light m-auto bg-opacity-75">
+                    <table class="container table table-striped table-hover table-sm table-bordered">
+                        <thead>
+                            <tr class="bg-light table-bordered ">
+                                <th>Nome</th>
+                                <th>Clientes</th>
+                                <th>Dinheiro</th>
+                                <th>Transferencia</th>
+                                <th>Comissão da Casa</th>
+                                <th>Opções</th>
+                            </tr>
+                        </thead>
+                        <tbody id="row_girls">
+                        </tbody>
+                        <thead>
+                            <tr class="bg-light table-bordered ">
+                                <th>Total Clientes</th>
+                                <th>Total Dinheiro</th>
+                                <th>Total Transferencia</th>
+                                <th>Comissão da Casa</th>
+                                <th>Despesas</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="row_result">
+                        </tbody>
+                    </table>
+                    <div class="container d-flex justify-content-end m-auto gap-1 p-1">
+                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#modal_girl_add">
+                            Adicionar Nova Garota
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm" onclick="deleteTableDB()">Deletar todos os
+                            campos</button>
+                        <button type="button" class="btn btn-warning btn-sm" onclick="clearTableDB()">Limpar todos os
+                            campos</button>
+
+
+                    </div>
+
+
+                </div>

@@ -1,0 +1,40 @@
+<div class="modal fade" id="modal_girl_add" tabindex="-1" aria-labelledby="modal_girl_add"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Nova Garota</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="/" method="post">
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Nome da Garota</label>
+                                        <input type="text" class="form-control" name="girl_name" id="girl_name"
+                                            aria-describedby="helpId" placeholder="Insira o Nome" autocomplete="off">
+
+                                    </div>
+                                    <div>
+                                        <span>Selecione uma cor</span>
+                                        <select class="form-control" id="girl_colorname">
+                                            <option value="danger">Vermelho</option>
+                                            <option value="primary">Azul</option>
+                                            <option value="warning">Amarelo</option>
+                                            <option value="success">Verde</option>
+                                            <option value="light">Branco</option>
+                                            <option value="black">Preto</option>
+                                        </select>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                        <button type="button" onclick="createGirlName()"
+                                            class="btn btn-success">Adicionar
+                                            Nova</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
